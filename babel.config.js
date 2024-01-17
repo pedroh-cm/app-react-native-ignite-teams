@@ -6,13 +6,12 @@ module.exports = function(api) {
       ["module-resolver", {
         "root": ["./src"],
         "alias": {
-          "@assets": "./src/assets",
-          "@components": "./src/components",
-          "@routes": "./src/routes",
-          "@screens": "./src/screens",
-          "@storage": "./src/storage",
-          "@theme": "./src/theme",
-          "@utils": "./src/utils"
+          '@assets': './src/assets',
+          '@components': './src/components',
+          '@screens': './src/screens',
+          '@storage': './src/storage',
+          '@theme': './src/theme',
+          '@utils': './src/utils',
         },
       }],
     ],
