@@ -5,7 +5,7 @@ type HighlightProps = {
   subtitle: string;
 };
 
-export function Highlight({ title, subtitle }:HighlightProps) {
+export function Highlight({ title, subtitle }: HighlightProps) {
   return (
     <S.Container>
       <S.Title>{title}</S.Title>

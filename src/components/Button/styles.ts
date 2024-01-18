@@ -1,5 +1,5 @@
 import { TouchableOpacity } from "react-native";
-import styled from "styled-components/native";
+import styled, { css }  from "styled-components/native";
 
 import theme from "@theme/index";
 
@@ -10,17 +10,19 @@ type Props = {
 };
 
 export const Container = styled(TouchableOpacity)<Props>`
-  flex: 1;
+  ${({ type }: Props) => css`
+    flex: 1;
 
-  min-height: 56px;
-  max-height: 56px;
+    min-height: 56px;
+    max-height: 56px;
 
-  background-color: ${({ type }: Props) => type === 'PRIMARY' ? theme.COLORS.GREEN_700 : theme.COLORS.RED_DARK};
+    background-color: ${type === 'PRIMARY' ? theme.COLORS.GREEN_700 : theme.COLORS.RED_DARK};
 
-  border-radius: 6px;
+    border-radius: 6px;
 
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
+  `}
 `;
 
 export const Title = styled.Text`

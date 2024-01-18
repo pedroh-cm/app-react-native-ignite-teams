@@ -5,7 +5,7 @@ type GroupCardProps = {
   title: string;
 } & TouchableOpacityProps;
 
-export function GroupCard({ title, ...rest }:GroupCardProps) {
+export function GroupCard({ title, ...rest }: GroupCardProps) {
   return (
     <S.Container {...rest}>
       <S.Icon />
